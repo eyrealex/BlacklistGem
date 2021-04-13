@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use this gem, create an instance of it in your application, for me I creted this inside my def create method for comments.
+Create the gem instance using: Blacklistergem::Base.sanitize()
+Using my comment variable in my own project I manipulated the instance above to the following to make the gem run:
+@comment.message = Blacklistergem::Base.sanitize(@comment.message)
 
 ## Development
 
